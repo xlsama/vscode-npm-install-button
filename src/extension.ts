@@ -18,9 +18,9 @@ class PackageJsonCodeLensProvider implements CodeLensProvider {
     let range: Range
 
     const dependenciesTypes = [
-      'dependencies',
-      'devDependencies',
-      'peerDependencies',
+      '"dependencies"',
+      '"devDependencies"',
+      '"peerDependencies"',
     ]
 
     for (const depType of dependenciesTypes) {
