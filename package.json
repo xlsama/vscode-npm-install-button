@@ -2,7 +2,7 @@
   "name": "vscode-npm-install-button",
   "displayName": "vscode-npm-install-button",
   "version": "0.0.1",
-  "description": "A VS Code extension that adds an 'Install' button to package.json files to quickly run npm install",
+  "description": "Quick install dependencies for VS Code",
   "categories": [
     "Other"
   ],
