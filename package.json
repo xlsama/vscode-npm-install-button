@@ -7,6 +7,7 @@
     "Other"
   ],
   "repository": "https://github.com/xlsama/vscode-npm-install-button",
+  "publisher": "npm-install-button",
   "main": "./out/extension.js",
   "scripts": {
     "compile": "tsc -p ./",
