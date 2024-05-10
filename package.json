@@ -1,0 +1,46 @@
+{
+  "name": "vscode-npm-install-button",
+  "displayName": "vscode-npm-install-button",
+  "version": "0.0.1",
+  "description": "A VS Code extension that adds an 'Install' button to package.json files to quickly run npm install",
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "package": "pnpm vsce package --no-dependencies",
+    "publish": "pnpm vsce publish --no-dependencies",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "test": "vscode-test",
+    "vscode:prepublish": "pnpm run compile",
+    "watch": "tsc -watch -p ./"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-npm-install-button.install",
+        "title": "npm-install-button: npm install"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:json"
+  ],
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.89.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "vsce": "^2.15.0"
+  },
+  "engines": {
+    "vscode": "^1.89.0"
+  }
+}
